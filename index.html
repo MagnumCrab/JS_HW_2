@@ -8,14 +8,20 @@
 </head>
 <body>
     <script>
+        // Задача №1:
+
         let num1 = Number(prompt('Enter first random number'));
         let num2 = Number(prompt('Enter second random number'));
         (num1 <= 1) ? alert(num1 + ' <= 1') : alert(num1 + ' > 1');
         (num2 >= 3) ? alert(num2 + ' >= 3') : alert(num2 + ' < 3');
 
+        // Задача №2:
+
         let test = true;
         (test === true) ? console.log('+++') : console.log('---')
         
+        // Задача №3:
+
         let day = Number(prompt('Enter number of the month between 1 and 31.'));
         // if (day < 1 && day > 31) { 
         //     alert ('You enter an incorrect number!');
@@ -30,6 +36,8 @@
         else {
             alert ('You enter an incorrect number!');
         } 
+
+        // Задача №4:
 
         let modulo = Number(prompt('Enter positive integer.'));
         alert (`В числе ${modulo} количество сотен: ${((modulo % 1000) - (modulo % 100)) / 100}, десятков: ${((modulo % 100) - (modulo % 10)) / 10}, единиц: ${modulo % 10}`);
