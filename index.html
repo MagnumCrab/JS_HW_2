@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar_2</title>
+</head>
+<body>
+    <script>
+        let num1 = Number(prompt('Enter first random number'));
+        let num2 = Number(prompt('Enter second random number'));
+        (num1 <= 1) ? alert(num1 + ' <= 1') : alert(num1 + ' > 1');
+        (num2 >= 3) ? alert(num2 + ' >= 3') : alert(num2 + ' < 3');
+
+        let test = true;
+        (test === true) ? console.log('+++') : console.log('---')
+        
+        let day = Number(prompt('Enter number of the month between 1 and 31.'));
+        // if (day < 1 && day > 31) { 
+        //     alert ('You enter an incorrect number!');
+        // } else                         // Не понимаю, почему не работает это условие в начале конструкции.
+        if (day >= 1 && day < 10) {
+            alert (`${day} falls in the first decade of the month`);
+        } else if (day >= 10 && day < 20) {
+            alert (`${day} falls in the second decade of the month`);
+        } else if (day >= 20 && day <= 31) {
+            alert (`${day} falls in the third decade of the month`);
+        } 
+        else {
+            alert ('You enter an incorrect number!');
+        } 
+
+        let modulo = Number(prompt('Enter positive integer.'));
+        alert (`В числе ${modulo} количество сотен: ${((modulo % 1000) - (modulo % 100)) / 100}, десятков: ${((modulo % 100) - (modulo % 10)) / 10}, единиц: ${modulo % 10}`);
+    </script>
+</body>
+</html>
